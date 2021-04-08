@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	 <title>ZooMath</title>
-	  <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  	<meta charset="UTF-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ZooMath - Learn & Win</title>
         <link rel="icon" type="image/png" href="Dog Favicon.png" />
@@ -30,47 +29,16 @@
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer>	
-        </script>
-	<style>
-		.button {
-		  background-color: #4CAF50; /* Green */
-		  border: none;
-		  color: white;
-		  border-radius: 8px;
-		  padding: 16px 32px;
-		  text-align: center;
-		  text-decoration: none;
-		  display: inline-block;
-		  font-size: 16px;
-		  margin: 4px 2px;
-		  transition-duration: 0.4s;
-		  cursor: pointer;
-		}
-
-		.button1 {
-		  background-color: white; 
-		  color: black;
-		}
-
-		.button1:hover {
-		  background-color: #4CAF50;
-		  color: white;
-		}
-		.center {
-		  margin: auto;
-		  width: 50%;
-		  padding: 160px;
-		}
-	</style>
+		<link rel="stylesheet" href="lstyle.css" />
+        <script src="script.js" defer></script>
+		<script src="lscript.js" defer></script>	
 </head>
-	<body style="background-color: #E0F5FF;">
-		<table border="0" style="margin: 0 auto; width:500px">
+	<body>
+		<table border="0">
 		    <tr>
 		        <td colspan="2"><h2>The Multiplication Table is</h2></td>
 		        <br>
-		    </tr>
-		 
+		    </tr>		 
 		    <tr>
 		    	<br>
 		        <td width="28%"><br>Enter a Number : </td>
@@ -80,23 +48,5 @@
 		        <td colspan="2"><span id="mul"></span></td>
 		    </tr>
 		</table>
-		 
-		<script>
-			function Table(num) {
-			    var input = num.value;
-			    if(!isNaN(input)) {
-			        var table="";
-			        var number="";
-			        for(i=1;i<=20;i++) {
-			            number = input * i;
-			            table +=  input + " x " + i + " = " + number + "<br>";
-			        }
-			        document.getElementById("mul").innerHTML = ("<br><br>" + table);
-			    }
-			    else {
-			        document.getElementById("mul").innerHTML = "Please Enter a valid Number";
-			    }
-			}
-		</script>
  	</body>
 </html>
