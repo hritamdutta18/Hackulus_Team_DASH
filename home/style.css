@@ -1,0 +1,22 @@
+.navbar-brand .h4{
+    vertical-align: middle;
+    line-height: 2.5;
+}
+body{
+    background-color: #E0F5FF;
+    
+}
+#middle{
+    margin-top: 30px;
+    height: 71vh;
+    background-image: url('../images/backg.png');
+    animation: backgroundanim 30s linear 1s infinite forwards;
+}
+@keyframes backgroundanim{
+    from {background-position-x: 0;}
+    to{background-position-x: 100%;}
+}
+@-webkit-keyframes backgroundanim{
+    from {background-position-x: 0;}
+    to{background-position-x: 100%;}
+}
