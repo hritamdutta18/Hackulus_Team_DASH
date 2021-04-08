@@ -3,14 +3,15 @@
     line-height: 2.5;
 }
 body{
-    background-color: #E0F5FF;
-    
+    background-color: #E0F5FF;    
 }
 #middle{
-    margin-top: 30px;
+    margin-top: 40px;
     height: 71vh;
     background-image: url('../images/backg.png');
+    background-repeat: repeat;
     animation: backgroundanim 30s linear 1s infinite forwards;
+    opacity: 0.5;
 }
 @keyframes backgroundanim{
     from {background-position-x: 0;}
@@ -19,4 +20,37 @@ body{
 @-webkit-keyframes backgroundanim{
     from {background-position-x: 0;}
     to{background-position-x: 100%;}
+}
+#pagelinks{
+    position: absolute;
+    left:30%;
+    top: 5px;
+    width: 70%;
+    align-items:stretch;
+}
+
+.other:hover{
+    width: 130px;
+    height: 80px;
+}
+#garden{
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+strong{
+    position: absolute;
+    bottom: 28px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Courier New';
+}
+marquee{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+marquee img{
+    margin-right: 20px;
 }
