@@ -31,9 +31,14 @@
         <link rel="stylesheet" href="../home/style.css" />
 		<link rel="stylesheet" href="lstyle.css" />
 		<script src="lscript.js" defer></script>
-		<script src="../home/script.js" defer></script>	
+		<script src="../home/script.js" defer></script>
 </head>
 	<body>
+		<img src="../images/Multiply bg.gif" alt="Background.gif"
+		style="height:80%;
+		width:100%;
+		position:absolute;
+		bottom:0;">
 		<nav class="navbar navbar-light navbar-expand-lg p-0">
             <div class="container-fluid">
                 <a href="../home/page.html" id= "sitelogo" class="navbar-brand">
@@ -44,7 +49,7 @@
                         height="130"
                         class="d-inline-block align-top"
                         onmouseover="logo_changer()"
-                        onmouseout="logo_changer2()" 
+                        onmouseout="logo_changer2()"
                         id="logo"
                     />
                     <span class="h2">Math</span>
@@ -91,16 +96,20 @@
 		<div id= "content">
 			<table border="0">
 				<tr>
-					<td colspan="2"><h2>The Multiplication Table is</h2></td>
+					<td colspan="2"><h2 class="ml11" style="position:absolute;bottom:180px;left:50px;">
+					  <span class="text-wrapper">
+					    <span class="line line1"></span>
+					    <span class="letters">Tweety wants a number</span>
+					  </span>
+					</h2></td>
 					<br>
-				</tr>		 
-				<tr>
-					<br>
-					<td width="28%"><br>Enter a Number : </td>
-					<td><br><input type="number" onchange="Table(this)"></td>
 				</tr>
 				<tr>
-					<td colspan="2"><span id="mul"></span></td>
+					<br>
+					<td><br><input class="w3-animate-fading" type="number" placeholder="Example: 17" onchange="Table(this)" style="position:absolute;bottom:120px;left:140px;"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="mul" style="font-weight: bold;font-family:cursive;font-size:1.15em;color:brown;position:absolute;bottom:60px;right:10%;"></span></td>
 				</tr>
 			</table>
 		</div>
@@ -108,5 +117,10 @@
         <!-- <div id= "contact">
             <img src="../images/soil.jpeg" alt="Soil Photo" id= "soil">
         </div> -->
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+
  	</body>
 </html>
