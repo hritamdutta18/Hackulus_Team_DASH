@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	  	<meta charset="UTF-8" />
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ZooMath - Learn & Win</title>
-        <link rel="icon" type="image/png" href="Dog Favicon.png" />
+        <title>ZooMath - Test Your Knowledge</title>
+        <link rel="icon" type="image/png" href="../images/Dog Favicon.png" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -28,20 +28,21 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="../home/style.css" />
-		<link rel="stylesheet" href="lstyle.css" />
-		<script src="lscript.js" defer></script>
-		<script src="../home/script.js" defer></script>	
-</head>
-	<body>
-		<nav class="navbar fixed-top navbar-light navbar-expand-lg p-0">
+        <link rel="stylesheet" href="../home/style.css"/>
+        <link rel="stylesheet" href="qstyle.css"/>
+        <script src="qscript.js" defer></script>
+        <script src="../home/script.js" defer></script>
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-light navbar-expand-lg p-0">
             <div class="container-fluid">
-                <a href="../home/page.html" class="navbar-brand" style= "width: fit-content;">
+                <a href="../home/page.html" class="navbar-brand" id= "sitelogo">
                     <img
                         src="../images/Dog logo.png"
                         alt="Logo Icon"
                         width="140"
-                        height="125"
+                        height="130"
                         class="d-inline-block align-top"
                         onmouseover="logo_changer()"
                         onmouseout="logo_changer2()" 
@@ -49,59 +50,51 @@
                     />
                     <span class="h2">Math</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div ></div>
+                  <div ></div> -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-3">
+                    <div class= "indilink mt-3">
                          <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Learn Page Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="../learn/learn.html" class="navbar-brand">Multiply!</a>
+                        <a href="../multiply/learn.html" class="navbar-brand">Multiply!</a>
                     </div>
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-5">
+                    <div class= "indilink mt-3">
                         <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Quiz Page Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="#" class="navbar-brand">QuizIt!</a>
+                        <a href="../quizit/quiz.html" class="navbar-brand">QuizIt!</a>
                     </div>
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-5">
+                    <div class= "indilink mt-3">
                         <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Contact Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="#" class="navbar-brand">Contact Us</a>
+                        <a href="#contact" class="navbar-brand">Contact Us</a>
                     </div>
                 </div>
             </div>
         </nav>
-		<div id= "content">
-			<table border="0">
-				<tr>
-					<td colspan="2"><h2>The Multiplication Table is</h2></td>
-					<br>
-				</tr>		 
-				<tr>
-					<br>
-					<td width="28%"><br>Enter a Number : </td>
-					<td><br><input type="number" onchange="Table(this)"></td>
-				</tr>
-				<tr>
-					<td colspan="2"><span id="mul"></span></td>
-				</tr>
-			</table>
-		</div>
- 	</body>
+
+        <div id= "content" class="mt-1">
+            
+        </div>
+        
+        <!-- <div id= "contact">
+            <img src="../images/soil.jpeg" alt="Soil Photo" id= "soil">
+        </div> -->
+    </body>
 </html>

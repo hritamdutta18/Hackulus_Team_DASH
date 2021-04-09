@@ -28,19 +28,19 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css"/>
         <script src="script.js" defer></script>
     </head>
 
     <body>
-        <nav class="navbar fixed-top navbar-light navbar-expand-lg p-0">
+        <nav class="navbar navbar-light navbar-expand-lg p-0">
             <div class="container-fluid">
-                <a href="page.html" class="navbar-brand" style= "width: fit-content;">
+                <a href="page.html" class="navbar-brand" id= "sitelogo">
                     <img
                         src="../images/Dog logo.png"
                         alt="Logo Icon"
                         width="140"
-                        height="125"
+                        height="130"
                         class="d-inline-block align-top"
                         onmouseover="logo_changer()"
                         onmouseout="logo_changer2()" 
@@ -48,58 +48,57 @@
                     />
                     <span class="h2">Math</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div ></div>
+                  <div ></div> col-sm-4 mx-sm-1 mx-md-3 -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-3">
+                    <div class= "indilink mt-3">
                          <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Learn Page Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="../learn/learn.html" class="navbar-brand">Multiply!</a>
+                        <a href="../multiply/learn.html" class="navbar-brand">Multiply!</a>
                     </div>
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-5">
+                    <div class= "indilink mt-3">
                         <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Quiz Page Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="#" class="navbar-brand">QuizIt!</a>
+                        <a href="../quizit/quiz.html" class="navbar-brand">QuizIt!</a>
                     </div>
-                    <div class= "indilink col-sm-4 mx-sm-1 mt-3 mx-md-5">
+                    <div class= "indilink mt-3">
                         <img
-                            src="../images/Cloud Button 1.png"
+                            src="../images/Cloud Button.png"
                             alt="Contact Link"
                             width="160"
                             height="100"
                             class="d-inline-block align-top"
                         />
-                        <a href="#" class="navbar-brand">Contact Us</a>
+                        <a href="#contact" class="navbar-brand">Contact Us</a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div id= "middle" class="mt-1">
-
-
+        <div id= "middle">
+            <img src="../images/Welcome.gif" alt="Introduction to Page" id= "intro">
         </div>
         <div id= "bottom">
             <img src="../images/Facts Garden.png" alt="" id= "garden">
 
             <marquee direction="left" loop scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
-                <img src="../images/duk.gif" alt="Facts gif"
+                <img src="../images/facts.gif" alt="Facts gif"
                     style=" left:0%;
-                            height:150px;
-                            width:180px;">
-                <span style="margin-left:70px"></span>
+                            height:50px;
+                            width: 100px;">
+                <span style="margin-left:50px"></span>
 
                 <img src="../images/bear.gif" alt="Bear gif bullet"
                     style=" left:0%;
@@ -164,5 +163,9 @@
                 <strong>Zero (0) is the only number which can not be represented by Roman numerals!</strong>
             </marquee>
         </div>
+
+        <!-- <div id= "contact">
+            <img src="../images/soil.jpeg" alt="Soil Photo" id= "soil">
+        </div> -->
     </body>
 </html>

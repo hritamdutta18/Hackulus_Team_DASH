@@ -27,10 +27,8 @@
 }
 
 #content{     
-    height:100vh;
-    background-image: url('../images/backgt.png');
-    background-repeat: repeat;
-    animation: backgroundanim 30s linear 1s infinite forwards;
+    height: 81vh;
+    background-image: url('');
 }
 table{
 	margin: 0 auto; 
