@@ -1,5 +1,5 @@
 .button {
-	background-color: #4CAF50; /* Green */
+	background-color: #4CAF50; 
 	border: none;
 	color: white;
 	border-radius: 8px;
@@ -25,7 +25,14 @@
 	width: 50%;
 	padding: 160px;
 }
+
+#content{     
+    height:100vh;
+    background-image: url('../images/backgt.png');
+    background-repeat: repeat;
+    animation: backgroundanim 30s linear 1s infinite forwards;
+}
 table{
 	margin: 0 auto; 
-	width:500px
+	width: 500px;
 }

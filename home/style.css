@@ -1,17 +1,18 @@
 .navbar-brand .h4{
-    vertical-align: middle;
-    line-height: 2.5;
+    /* vertical-align: bottom; */
+    line-height: 100px;
 }
 body{
     background-color: #E0F5FF;    
 }
+.container-fluid{
+    width: 90vw;
+}
 #middle{
-    margin-top: 40px;
     height: 71vh;
-    background-image: url('../images/backg.png');
+    background-image: url('../images/backgt.png');
     background-repeat: repeat;
     animation: backgroundanim 30s linear 1s infinite forwards;
-    opacity: 0.5;
 }
 @keyframes backgroundanim{
     from {background-position-x: 0;}
@@ -26,12 +27,10 @@ body{
     left:30%;
     top: 5px;
     width: 70%;
-    align-items:stretch;
 }
-
-.other:hover{
-    width: 130px;
-    height: 80px;
+.indilink:hover{
+    transform: scale(1.1);
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
 }
 #garden{
     margin: 0;
@@ -53,4 +52,22 @@ marquee{
 }
 marquee img{
     margin-right: 20px;
+}
+.indilink{
+    cursor: pointer;
+    display: inline-table;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+}
+
+.indilink a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
