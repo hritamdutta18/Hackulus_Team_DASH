@@ -28,25 +28,73 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../home/style.css" />
 		<link rel="stylesheet" href="lstyle.css" />
-        <script src="script.js" defer></script>
-		<script src="lscript.js" defer></script>	
+		<script src="lscript.js" defer></script>
+		<script src="../home/script.js" defer></script>	
 </head>
 	<body>
-		<table border="0">
-		    <tr>
-		        <td colspan="2"><h2>The Multiplication Table is</h2></td>
-		        <br>
-		    </tr>		 
-		    <tr>
-		    	<br>
-		        <td width="28%"><br>Enter a Number : </td>
-		        <td><br><input type="number" onchange="Table(this)"></td>
-		    </tr>
-		    <tr>
-		        <td colspan="2"><span id="mul"></span></td>
-		    </tr>
-		</table>
+		<nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="../home/page.html" class="navbar-brand p-3 pt-1">
+                    <img
+                        src="../images/Dog logo.png"
+                        alt="Logo Icon"
+                        width="120"
+                        height="100"
+                        class="d-inline-block align-top"
+                        onmouseover="logo_changer()"
+                        onmouseout="logo_changer2()" 
+                        id="logo"
+                    />
+                    <span class="h4">Math</span>
+                </a>
+                <div id= "pagelinks">
+                    <a href="../learn/learn.html" class="navbar-brand">
+                        <img
+                            src="../images/Cloud Button 1.png"
+                            alt="Learn Page Link"
+                            width="150"
+                            height="90"
+                            class="d-inline-block align-top m-2 other"
+                        />
+                    </a>
+                    <a href="#" class="navbar-brand">
+                        <img
+                            src="../images/Cloud Button 1.png"
+                            alt="Quiz Page Link"
+                            width="150"
+                            height="90"
+                            class="d-inline-block align-top m-2 other"
+                        />
+                    </a>
+                    <a href="#" class="navbar-brand">
+                        <img
+                            src="../images/Cloud Button 1.png"
+                            alt="Contact Link"
+                            width="150"
+                            height="90"
+                            class="d-inline-block align-top m-2 other"
+                        />
+                    </a>
+                </div>
+            </div>
+        </nav>
+		<div id= "content">
+			<table border="0">
+				<tr>
+					<td colspan="2"><h2>The Multiplication Table is</h2></td>
+					<br>
+				</tr>		 
+				<tr>
+					<br>
+					<td width="28%"><br>Enter a Number : </td>
+					<td><br><input type="number" onchange="Table(this)"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><span id="mul"></span></td>
+				</tr>
+			</table>
+		</div>
  	</body>
 </html>

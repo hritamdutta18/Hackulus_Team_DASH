@@ -1,6 +1,6 @@
 function logo_changer()
 {
-document.getElementById('logo').src="../images/logo changer.gif";
+  document.getElementById('logo').src="../images/logo changer.gif";
 }
 function logo_changer2()
 {
