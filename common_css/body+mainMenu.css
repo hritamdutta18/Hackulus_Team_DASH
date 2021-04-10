@@ -1,26 +1,21 @@
-body {
-  margin: 0;
-  background-image: src="IMGS/soil11.png";
+#contact {
+  position: absolute;
+  background-image: url('../images/soil11.png');
   background-repeat: repeat;
   background-size: cover;
+  width: 100%;
+  top: 100%;
 }
-#background {
-  filter: brightness(90%);
+#contact h2{
+  height: fit-content; 
+  color: #ffffff; 
+  font-family: 'Segoe UI', sans-serif; 
+  width: 100%;
 }
-
-#logo {
-  top: 0rem;
-  left: 10px;
-  position: relative;
-  height: 4rem;
-  max-width: auto;
-}
-
 @font-face {
   font-family: watan;
   src: url("watan.ttf");
 }
-
 #contactus {
   margin: 10px;
   background-color: #503d3f;
@@ -34,14 +29,12 @@ body {
   z-index: 3;
   visibility: hidden;
 }
-
 .name {
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
 }
-
 .name > p {
   font-size: 0.5rem;
   bottom: 0;
@@ -51,3 +44,4 @@ body {
   padding-right: 10px;
   font-family: watan;
 }
+

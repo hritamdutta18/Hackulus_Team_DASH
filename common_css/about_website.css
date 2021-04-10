@@ -1,38 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", arial;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .how-is-us {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 1000px;
+  width: 55%;
   transform-style: preserve-3d;
 }
-
 .how-is-us .box {
   position: relative;
-  width: 230px;
-  height: 300px;
+  width: 180px;
+  height: 210px;
   margin: 20px 0;
   perspective: 1000px;
   overflow: hidden;
   transform-style: preserve-3d;
 }
-
 .how-is-us .box .imgbx {
   position: absolute;
   top: 0;
@@ -44,13 +28,11 @@ body {
   transition: 0.5s;
   transition-delay: 0.2s;
 }
-
 .how-is-us .box:hover .imgbx {
   transform: rotateX(-90deg);
   opacity: 0;
   transition-delay: 0s;
 }
-
 .how-is-us .box .imgbx img {
   position: absolute;
   top: 0;
@@ -59,7 +41,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 .how-is-us .box .contentbx {
   position: absolute;
   top: 0;
@@ -69,27 +50,32 @@ body {
   background: #333;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   transform-origin: bottom;
   transform-style: preserve-3d;
   transition: 0.5s;
   transform: rotateX(90deg);
   opacity: 0;
   color: #fff;
+  overflow-y: scroll;
 }
-
 .how-is-us .box:hover .contentbx {
   transform: rotateX(0deg);
   opacity: 1;
   transition-delay: 0.2s;
 }
-
 .contentbx > a > img {
-  margin-top: 30%;
-  height: 100px;
-  width: 100px;
+  margin-top: 15px;
+  margin-right: 10px;
+  height: 27px;
+  width: 30px;  
 }
-
+::-webkit-scrollbar {
+  width:1px;
+}
+.contentbx > a{
+  text-decoration: none;
+}
 p{
 	font-size: 12px;
 }
