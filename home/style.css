@@ -1,66 +1,52 @@
+
+body{
+    background-color: #E0F5FF;
+}
+.container-fluid{
+    width: 100vw;
+    padding: 0;
+}
+.container-fluid button, .container-fluid ul{
+    display: none;
+}
+
+/************ Navbar Logo Styles ************/
+
 .navbar-brand .h2{
-    line-height: 130px;
+    line-height: 75px;
     color: #000000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
 #sitelogo{
     width: fit-content;
-    margin: 0 3vw;
-}
-body{
-    background-color: #E0F5FF;
-}
-.container-fluid{
-    width: 100vw;
-    background-color: #E0F5FF;
-    padding: 0;
-}
-#middle{
-    height: 72vh;
-    background-image: url('../images/background.png');
-    background-repeat: repeat;
-    animation: backgroundanim 30s linear 1s infinite forwards;
-}
-@keyframes backgroundanim{
-    from {background-position-x: 0;}
-    to{background-position-x: 100%;}
-}
-@-webkit-keyframes backgroundanim{
-    from {background-position-x: 0;}
-    to{background-position-x: 100%;}
+    margin: 0.5vw 3vw 0;    
 }
 
-#navbarSupportedContent{
-    position: absolute;
-    left:30%;
-    top: 5px;
-    width: 70%;
+/************ Responsive Navbar Styles ************/
+
+.navbar-collapse {
+    flex-grow: 0.4;
 }
+.nav-link{
+    font-family: 'Times New Roman', Times, serif;
+	color: rgb(0, 0, 0) !important;
+	font-weight: 700;
+    font-size: 1.2rem;
+    background-color: #E0F5FF;
+    background-image: linear-gradient(#E0F5FF, #d1eefc);
+    text-align: center;
+}
+
+#nav-list a:hover, #nav-list a:focus{
+    background-color: #aee1f8;
+}
+
+/************ Navbar Cloud Menu Styles ************/
+
 .indilink:hover{
     transform: scale(1.1);
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
-}
-#garden{
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-strong{
-    position: absolute;
-    bottom: 28px;
-    font-size: 20px;
-    color: white;
-    font-family: 'Courier New';
-}
-marquee{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-marquee img{
-    margin-right: 20px;
 }
 .indilink{
     cursor: pointer;
@@ -80,34 +66,142 @@ marquee img{
     font-weight: bold;
     font-style: italic;
 }
+
+/************ Main Body Styles ************/
+
+#middle{
+    height: 72vh;
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    animation: backgroundanim 30s linear 1s infinite forwards;
+}
+@keyframes backgroundanim{
+    from {background-position-x: 0;}
+    to{background-position-x: 100%;}
+}
 #intro{
     position: absolute;
     top: 21%;
-    left: 27%;
+    left: 28%;
     height: 55%;
     width: 44%;
 }
-.button {
-background-color: #54321d;
-border: none;
-color: white;
-padding: 6px 16px;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-transition-duration: 0.4s;
-cursor: pointer;
-border-radius: 8px;
-}
-.button1 {
-background-color: white;
-color: black;
-border: 2px solid #54321d;
-position: absolute;
-right:23%;
-}
-.button1:hover {
-background-color: #54321d;
-color: white;
+#garden{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
+/************ Facts Styles ************/
+
+marquee{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+}
+marquee p{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Courier New';
+    vertical-align: middle;
+    line-height: 3.5;
+}
+marquee img{
+    vertical-align: top;
+    margin: 0 2% 0 10%; 
+}
+#facts      {    width: 8%;     }
+#bear       {    width: 8%;     }
+#elephant   {    width: 7%;     }
+#gorilla    {    width: 5.5%;   }
+#hyena      {    width: 6.75%;  }
+#leopard    {    width: 12%;    }
+#lion       {    width: 7.5%;   }
+#rhino      {    width: 8.25%;  }
+#tiger      {    width: 10%;    }
+
+/************ Contact Section Form Styles ************/
+
+form{
+    float: right;
+    width: 33%;
+    position: relative;
+    right: 3%;
+}
+.button {
+    background-color: #54321d;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #54321d;
+}
+.button1:hover {
+    background-color: #54321d;
+    color: white;
+}
+
+/************ Mobile Device (sm) Styles ************/
+
+@media (max-width: 767px){
+    .container-fluid button, .container-fluid ul{
+        display: initial;
+        margin: 0 3% 5% 0;
+    }
+    .navbar-brand .h2{
+        line-height: 90px;
+    }
+    .indilink{
+        display: none;
+    }
+    #intro{
+        top: 39%;
+        left: 0;
+        height: 37%;
+        width: 100%;
+    }
+    #middle{ height: 79vh; }
+    #garden{ height: 16vh; }
+    form{
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .how-is-us{
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    form h2{
+        margin-top: 2% !important;
+    }
+    marquee{
+        height: 7%;
+    }
+    marquee p{
+        font-size: 1rem;
+        line-height: 3;
+    }
+    #facts      {    width: 17%;    }
+    #bear       {    width: 19%;    }
+    #elephant   {    width: 17%;    }
+    #gorilla    {    width: 14%;    }
+    #hyena      {    width: 16.75%; }
+    #leopard    {    width: 31%;    }
+    #lion       {    width: 18%;    }
+    #rhino      {    width: 20%;    }
+    #tiger      {    width: 24%;    }
+}

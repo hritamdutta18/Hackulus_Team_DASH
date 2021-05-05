@@ -41,14 +41,14 @@
 		width:100%;
 		position:absolute;
 		bottom:0;">
-		<nav class="navbar navbar-light navbar-expand-lg p-0">
+		<nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a href="../home/page.html" id= "sitelogo" class="navbar-brand">
+                <a href="page.html" class="navbar-brand" id= "sitelogo">
                     <img
                         src="../images/Dog logo.png"
                         alt="Logo Icon"
-                        width="140"
-                        height="130"
+                        width= "110"
+                        height="80"
                         class="d-inline-block align-top"
                         onmouseover="logo_changer()"
                         onmouseout="logo_changer2()"
@@ -56,40 +56,54 @@
                     />
                     <span class="h2">Math</span>
                 </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class= "indilink mt-3">
-                         <img
-                            src="../images/Cloud Button.png"
-                            alt="Learn Page Link"
-                            width="160"
-                            height="100"
-                            class="d-inline-block align-top"
-                        />
-                        <a href="learn.html" class="navbar-brand">Multiply!</a>
-                    </div>
-                    <div class= "indilink mt-3">
-                        <img
-                            src="../images/Cloud Button.png"
-                            alt="Quiz Page Link"
-                            width="160"
-                            height="100"
-                            class="d-inline-block align-top"
-                        />
-                        <a href="../quizit/quiz.html" class="navbar-brand">QuizIt!</a>
-                    </div>
-                    <div class= "indilink mt-3">
-                        <img
-                            src="../images/Cloud Button.png"
-                            alt="Contact Link"
-                            width="160"
-                            height="100"
-                            class="d-inline-block align-top"
-                        />
-                        <a href="#contact" class="navbar-brand">Contact Us</a>
-                    </div>
-                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../multiply/learn.html">Multiply!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../quizit/quiz.html">QuizIt!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class= "indilink mt-3">
+                    <img
+                       src="../images/Cloud Button.png"
+                       alt="Learn Page Link"
+                       width="160"
+                       height="100"
+                       class="d-inline-block align-top"
+                   />
+                   <a href="../multiply/learn.html" class="navbar-brand">Multiply!</a>
+               </div>
+               <div class= "indilink mt-3">
+                   <img
+                       src="../images/Cloud Button.png"
+                       alt="Quiz Page Link"
+                       width="160"
+                       height="100"
+                       class="d-inline-block align-top"
+                   />
+                   <a href="../quizit/quiz.html" class="navbar-brand">QuizIt!</a>
+               </div>
+               <div class= "indilink mt-3">
+                   <img
+                       src="../images/Cloud Button.png"
+                       alt="Contact Link"
+                       width="160"
+                       height="100"
+                       class="d-inline-block align-top"
+                   />
+                   <a href="#contact" class="navbar-brand">Contact Us</a>
+               </div>
+              </div>
             </div>
-        </nav>
+          </nav>
 
 		<div id= "content">
 			<table border="0">
@@ -166,7 +180,7 @@
                         <a href="https://www.linkedin.com/in/anish-chattaraj-103855189/" target="_blank">
                             <img src="../images/linkedin logo.png" alt="linkedin_logo">
                         </a>
-                        <a href="https://mail.google.com/mail/?fs=1&tf=cm&to=anishfiitjee1719@gmail.com" target="_blank">
+                        <a href="https://mail.google.com/mail/?fs=1&tf=cm&to=anishfiitjee1719@gmail.com" target="_blank" >
                             <img src="../images/gmail new logo.png" alt="gmail_logo" style= "height: 24px;">
                         </a>
                     </div>
@@ -192,32 +206,33 @@
                 </div>
             </div>
             <script type="text/javascript" src="js/mainScript.js"></script>
-        </div>
-          <form style="right:7%;position:absolute;top:104%;width:30%;">
-            <table border="0" style="margin: 0; width: 100%;">
-          <h2 class= "m-0 ms-2 p-2 mb-2" style="color:white;">Reach out to us</h2>
-              
-              <td  style="color:white;padding:10px;"><h6>Name</h6></td>
-              <td>
-                <input type="text" placeholder="abc" name="name" style="margin-left: 30px;width:90%">
-              </td>
-              <tr>
-                <td  style="color:white;padding:10px;"><h6>E-mail</h6></td>
-                <td><input type="email" placeholder="abc@xyz.com" name="email" style="margin-left: 30px;width:90%;"></td>
-              </tr>
-              <tr>
-                <td style="color:white;padding:10px;"><h6>Comments</h6></td>
-                <td>
-              <textarea name="name" rows="4" style="height:50%;width:90%;margin-left: 30px;" placeholder="Enter text"></textarea>
-                </td>
-              </tr>
-              <td style="padding:10px;">
-  
-                  <button class="button button1" type="submit"> Submit </button>
-  
-              </td>
-            </table>
-          </form>
+            
+            <form>
+                <table style="margin: 0; width: 100%;">
+                    <h2 class= "m-sm-0 ms-sm-2 p-sm-2 mb-sm-2 mt-xs-3" style="color:white;">Reach out to us</h2><br>
+                    <tr>
+                        <td  style="color:white;padding:10px;"><h6>Name</h6></td>
+                        <td>
+                            <input type="text" placeholder="abc" name="name" style="margin-left: 30px;width:90%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color:white;padding:10px;"><h6>E-mail</h6></td>
+                        <td><input type="email" placeholder="abc@xyz.com" name="email" style="margin-left: 30px;width:90%;"></td>   
+                    </tr>
+                    <tr>
+                        <td style="color:white;padding:10px;"><h6>Comments</h6></td>
+                        <td>
+                            <textarea name="name" rows="4" style="height:50%; width:90%; margin: 10px 0 0 30px;" placeholder="Enter text"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;">      
+                            <button class="button button1" type="submit"> Submit </button>      
+                        </td>
+                    </tr>
+                </table>
+            </form>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
  	</body>
 </html>
