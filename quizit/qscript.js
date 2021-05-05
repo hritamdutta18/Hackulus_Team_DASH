@@ -44,55 +44,55 @@ function buildQuiz(){
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
-  
+  const n= 3;
   const myQuestions = [
     {
-      question: "Question 1: 17 x 3 =",
+      question: "Question 1: " + n +" x 19 =",
       answers: {
-        a: "173",
-        b: "51",
-        c: "85",
-        d: "112"
+        a: n*19 - 3,
+        b: n*19 + 4,
+        c: n*19,
+        d: n*18
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Question 2: " + n +" x 16 =",
+      answers: {
+        a: n*16 - 3,
+        b: n*16,
+        c: n*16 + 4,
+        d: n*17
       },
       correctAnswer: "b"
     },
     {
-      question: "Question 2: 13 x 6 =",
+      question: "Question 3: " + n +" x 8 =",
       answers: {
-        a: "78",
-        b: "117",
-        c: "51",
-        d: "91"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Question 3: 16 x 8 =",
-      answers: {
-        a: "102",
-        b: "144",
-        c: "104",
-        d: "128"
+        a: n*8 - 1,
+        b: n*8 + 2,
+        c: n*13,
+        d: n*8
       },
       correctAnswer: "d"
     },
     {
-      question: "Question 4: Tom wants 7 pencils. Each pencil costs Rs. 5, what is the total cost?",
+      question: "Question 4: Tom wants " + n +" pencil(s). Each pencil costs Rs. 5, what is the total cost?",
       answers: {
-        a: "42",
-        b: "35",
-        c: "38",
-        d: "63"
+        a: n*5 - 1,
+        b: n*6,
+        c: n*5 + 2,
+        d: n*5
       },
-      correctAnswer: "b"
+      correctAnswer: "d"
     },
     {
-      question: "Question 5: Jerry wants 17 apples. Each apple costs Rs. 6, what is the total cost?",
+      question: "Question 5: All " + n +" students have 13 apples each. How many apples are there in total?",
       answers: {
-        a: "102",
-        b: "176",
-        c: "120",
-        d: "112"
+        a: n*13,
+        b: n*12 + 12,
+        c: n*13 + 1,
+        d: n*12 + 3
       },
       correctAnswer: "a"
     }
